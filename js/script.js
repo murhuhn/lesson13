@@ -50,7 +50,7 @@ todoControl.addEventListener('submit', function (event) {
     completed: false
   };
 
-  if (headerInput.value === '') {
+  if (headerInput.value.trim() === '') {
     alert('Укажите название задачи');
     render();
   } else {
